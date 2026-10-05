@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Michaela Manchego">
+    <meta name="description" content="Learn tips and tricks and everything else inbetween for you next Disney trip">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="disneyexpert.css">
+    <title>Disneyland Park Expert: The Complete Guide: Parks</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <span>Disney Parks Expert</span>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Parks</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="mystery.html">Mystery Pin</a></li>
+        </ul>
+
+    </nav>
+
+    <!--start the main content-->
+    <main>
+        <h1>Mystery Pins Order</h1>
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name<input type="text" name="fname" required></label>
+                <label>Last Name<input type="text" name="lname" required></label>
+                <label>Email<input type="email" name="email" required></label>
+                <label>Phone Number<input type="tel" name="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Information</legend>
+                <label>Number of Pins<input type="number" name="pins" min="1" max="10" required></label>
+                <label>Pin Size</label>
+                <label><input type="radio" name="size" value="small" required>Small</label>
+                <label><input type="radio" name="size" value="medium" required>Medium</label>
+                <label><input type="radio" name="size" value="large" required>Large</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of Pin</legend>
+                <label><input type="checkbox" name="character" value="chosen">Character</label>
+                <label><input type="checkbox" name="movie" value="chosen">Movies</label>
+                <label><input type="checkbox" name="theme park" value="chosen">Theme Park</label>
+                <label><input type="checkbox" name="holiday" value="chosen">Holiday</label>
+                <label><input type="checkbox" name="limited edition" value="chosen">Limited Edition</label>
+                <label><input type="checkbox" name="vintage" value="chosen">Vintage</label>
+                <label><input type="checkbox" name="other" value="chosen">Other</label>
+                <label><input type="checkbox" name="surprise" value="chosen">Surprise Me!</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping Information</legend>
+                <label>Shipping Method
+                    <select name="shipping">
+                        <option value="">Select Shipping Method</option>
+                        <option value="standard">Standard (5-7 business days)</option>
+                        <option value="express">Express (2-3 business days)</option>
+                        <option value="overnight">Overnight (1 business day)</option>
+                    </select>
+                </label>
+                <label>Street Address<input type="text" name="address" required></label>
+                <label>City<input type="text" name="city" required></label>
+                <label>State<input type="text" name="state" required></label>
+                <label>Zip Code<input type="text" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label>Card Number<input type="text" name="ccnum" required></label>
+                <label>Expiration Date<input type="month" name="expdate" required></label>
+                <label>CVV<input type="text" name="cvv" required></label>
+            </fieldset>
+
+            <label>Please add any specific requests for pins, like characters you like, or specific movies, any
+                preferences.<textarea name="comments"></textarea>
+            </label>
+
+
+
+
+
+
+
+            <input type="submit" value="Send Order">
+        </form>
+
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Michaela Manchego &bull; Web Essentials</p>
+
+    </footer>
+
+
+</body>
+
+</html>
